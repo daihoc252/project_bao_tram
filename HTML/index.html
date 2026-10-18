@@ -1,0 +1,248 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Thềm Café · Xưởng rang và quầy pha ở Quận 3</title>
+  <meta name="description" content="Thềm Café rang hạt ngay tại quán mỗi sáng. Xem nhật ký mẻ rang hôm nay và menu theo độ rang.">
+  <link rel="stylesheet" href="../css/fonts.css">
+  <link rel="stylesheet" href="../css/style.css">
+</head>
+<body>
+
+  <!-- ===== ĐẦU TRANG ===== -->
+  <header class="dau-trang">
+    <div class="khung dau-trang__hang">
+      <a class="logo" href="index.html">
+        <span class="logo__chu">Thềm</span>
+        <span class="logo__phu">café · xưởng rang</span>
+      </a>
+      <nav class="dieu-huong" aria-label="Điều hướng chính">
+        <ol>
+          <li class="giai-doan--1"><a href="index.html" aria-current="page"><span class="giai-doan__ten">nạp hạt</span><span class="giai-doan__trang">Trang chủ</span></a></li>
+          <li class="giai-doan--2"><a href="khong-gian.html"><span class="giai-doan__ten">sấy</span><span class="giai-doan__trang">Không gian</span></a></li>
+          <li class="giai-doan--3"><a href="menu.html"><span class="giai-doan__ten">nổ lần 1</span><span class="giai-doan__trang">Menu</span></a></li>
+          <li class="giai-doan--4"><a href="dat-ban.html"><span class="giai-doan__ten">phát triển</span><span class="giai-doan__trang">Đặt bàn</span></a></li>
+          <li class="giai-doan--5"><a href="gioi-thieu.html"><span class="giai-doan__ten">ra lò</span><span class="giai-doan__trang">Giới thiệu</span></a></li>
+        </ol>
+      </nav>
+    </div>
+  </header>
+
+  <main>
+
+    <!-- ===== MỞ ĐẦU: ĐƯỜNG CONG MẺ RANG HÔM NAY ===== -->
+    <section class="mo-dau">
+      <div class="khung mo-dau__chu">
+        <h1>Rang sáng nay, pha chiều nay.</h1>
+        <p class="mo-dau__mo-ta">Thềm là một xưởng rang nhỏ nằm ngay sau quầy pha. Mỗi sáng, hạt được rang theo từng mẻ năm ký, nghỉ cho ổn định rồi mới lên quầy. Đường cong bên dưới là nhật ký của mẻ hôm nay.</p>
+      </div>
+
+      <figure class="bieu-do">
+        <div class="so-lieu">
+          <p class="so-lieu__tieu-de">Mẻ #041 · hôm nay</p>
+          <dl>
+            <dt>Hạt</dt><dd>Arabica Cầu Đất</dd>
+            <dt>Khối lượng</dt><dd>4,8 kg</dd>
+            <dt>Độ rang</dt><dd>Vừa sáng</dd>
+            <dt>Tổng thời gian</dt><dd>12:30</dd>
+          </dl>
+        </div>
+
+        <!-- khung giữ đúng tỉ lệ của hình, các ghi chú đặt theo % bên trong -->
+        <div class="bieu-do__khung">
+          <picture>
+            <source media="(max-width: 640px)" srcset="../IMG/duong-cong-rang-doc.svg">
+            <img src="../IMG/duong-cong-rang.svg" alt="Biểu đồ nhiệt độ hạt của mẻ rang số 041: hạt hồi nhiệt ở 92°C lúc 1 phút 10 giây, nổ lần đầu ở 196°C lúc 9 phút 40 giây và ra lò ở 205°C lúc 12 phút 30 giây.">
+          </picture>
+          <p class="ghi-chu ghi-chu--hoi-nhiet">hồi nhiệt · <b>1:10 · 92°C</b></p>
+          <p class="ghi-chu ghi-chu--say">hết sấy, hạt ngả vàng · <b>4:30</b></p>
+          <p class="ghi-chu ghi-chu--no">nổ lần 1 · <b>9:40 · 196°C</b></p>
+          <p class="ghi-chu ghi-chu--ra-lo">ra lò · <b>12:30 · 205°C</b></p>
+        </div>
+
+        <a class="nut nut--ra-lo" href="menu.html">Xem menu</a>
+        <figcaption class="truc-thoi-gian">thời gian rang (phút)</figcaption>
+      </figure>
+    </section>
+
+    <!-- ===== XƯỞNG RANG SAU QUẦY ===== -->
+    <section class="muc">
+      <div class="khung xuong">
+        <div>
+          <figure class="xuong__anh-chinh">
+            <img src="../IMG/may-rang.jpg" alt="Người thợ đổ hạt cà phê vừa rang từ trống máy rang xuống khay làm nguội" width="1600" height="1100" loading="lazy">
+            <figcaption>Máy rang 5 kg đặt sát quầy, khách ngồi quầy nhìn thấy cả mẻ.</figcaption>
+          </figure>
+          <figure class="anh-chu-thich xuong__anh-phu">
+            <img src="../IMG/khay-lam-nguoi.jpg" alt="Thợ rang dùng xẻng kim loại đảo hạt cà phê nâu trong khay làm nguội" width="1200" height="900" loading="lazy">
+            <figcaption>Khay làm nguội đảo liên tục 4 phút để hạt dừng chín.</figcaption>
+          </figure>
+        </div>
+
+        <div>
+          <h2>Máy rang đặt ngay sau quầy.</h2>
+          <p>Ở Thềm, ly cà phê bạn uống được rang cách đó vài bước chân. Chúng tôi chọn hạt từ những vườn nhỏ ở Lâm Đồng và Đắk Lắk, rang mẻ nhỏ để giữ được vị riêng của từng vùng, rồi ghi lại mọi mẻ vào sổ nhật ký như tờ bạn vừa xem.</p>
+
+          <ul class="thong-so">
+            <li><b>Lịch rang</b><span>Thứ Ba, Thứ Năm, Thứ Bảy · 7:00 – 9:00</span></li>
+            <li><b>Mỗi mẻ</b><span>5 kg hạt xanh, rang khoảng 12 – 14 phút</span></li>
+            <li><b>Nghỉ hạt</b><span>Ít nhất 48 giờ trước khi pha espresso</span></li>
+            <li><b>Ghé xem</b><span>Ngồi quầy vào buổi sáng ngày rang để xem trọn một mẻ</span></li>
+          </ul>
+
+          <a class="nut nut--vien" href="khong-gian.html">Xem không gian quán</a>
+        </div>
+      </div>
+    </section>
+
+    <!-- ===== THƯỚC MÀU RANG ===== -->
+    <section aria-labelledby="tieu-de-thuoc">
+      <div class="khung thuoc-rang__dau">
+        <h2 id="tieu-de-thuoc">Một mẻ rang đi qua năm màu.</h2>
+        <p>Hạt cà phê đổi màu theo nhiệt độ. Mỗi món trong menu được ghi độ rang theo thước này, để bạn biết trước ly của mình sẽ chua sáng hay đậm đắng.</p>
+      </div>
+
+      <div class="thuoc-rang">
+        <div class="thuoc-rang__muc nen-hat-xanh">
+          <span class="thuoc-rang__nhiet so">25°C</span>
+          <div>
+            <h3>Hạt xanh</h3>
+            <p>Hạt sống, cứng, mùi cỏ khô. Chưa pha được.</p>
+          </div>
+        </div>
+        <div class="thuoc-rang__muc nen-say">
+          <span class="thuoc-rang__nhiet so">150°C</span>
+          <div>
+            <h3>Sấy</h3>
+            <p>Hạt mất nước, ngả vàng, thơm mùi bánh mì nướng.</p>
+          </div>
+        </div>
+        <div class="thuoc-rang__muc nen-que">
+          <span class="thuoc-rang__nhiet so">196°C</span>
+          <div>
+            <h3>Nổ lần 1</h3>
+            <p>Hạt nứt tách, màu quế. Rang sáng: chua thanh, hương trái cây.</p>
+          </div>
+        </div>
+        <div class="thuoc-rang__muc nen-nau">
+          <span class="thuoc-rang__nhiet so">210°C</span>
+          <div>
+            <h3>Phát triển</h3>
+            <p>Đường caramel hóa. Rang vừa: ngọt, tròn vị, hợp pha sữa.</p>
+          </div>
+        </div>
+        <div class="thuoc-rang__muc nen-rang-dam">
+          <span class="thuoc-rang__nhiet so">225°C</span>
+          <div>
+            <h3>Rang đậm</h3>
+            <p>Nổ lần 2, dầu nổi bóng. Đắng sô-cô-la, hợp pha phin.</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ===== MẺ TUẦN NÀY ===== -->
+    <section class="muc nen-que muc-tuan-nay">
+      <div class="khung">
+        <div class="muc-tuan-nay__dau">
+          <div>
+            <h2>Trên quầy tuần này</h2>
+            <p>Ba lô hạt đang được pha. Mỗi lô hết là đổi, nên menu thay theo tuần.</p>
+          </div>
+          <a class="nut" href="menu.html">Xem toàn bộ menu</a>
+        </div>
+
+        <table class="bang-nhat-ky">
+          <caption>Sổ nhật ký · các lô đang dùng</caption>
+          <thead>
+            <tr>
+              <th scope="col">Lô</th>
+              <th scope="col">Hạt</th>
+              <th scope="col">Độ rang</th>
+              <th scope="col">Nốt hương</th>
+              <th scope="col">Pha ngon nhất</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <th scope="row">#041</th>
+              <td data-nhan="Hạt">Arabica Cầu Đất, Lâm Đồng</td>
+              <td data-nhan="Độ rang"><span class="do-rang do-rang--sang" aria-hidden="true"><span></span><span></span><span></span><span></span><span></span></span>Sáng</td>
+              <td data-nhan="Nốt hương">đào chín, mật ong, trà đen</td>
+              <td data-nhan="Pha ngon nhất">Pour-over V60</td>
+            </tr>
+            <tr>
+              <th scope="row">#039</th>
+              <td data-nhan="Hạt">Arabica Sơn La · sơ chế mật ong</td>
+              <td data-nhan="Độ rang"><span class="do-rang do-rang--vua" aria-hidden="true"><span></span><span></span><span></span><span></span><span></span></span>Vừa</td>
+              <td data-nhan="Nốt hương">caramel, hạnh nhân, cam</td>
+              <td data-nhan="Pha ngon nhất">Espresso, latte</td>
+            </tr>
+            <tr>
+              <th scope="row">#037</th>
+              <td data-nhan="Hạt">Robusta Đắk Lắk · hái chín</td>
+              <td data-nhan="Độ rang"><span class="do-rang do-rang--dam" aria-hidden="true"><span></span><span></span><span></span><span></span><span></span></span>Đậm</td>
+              <td data-nhan="Nốt hương">sô-cô-la đen, đường thốt nốt</td>
+              <td data-nhan="Pha ngon nhất">Phin, bạc xỉu</td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+    </section>
+
+    <!-- ===== KHÔNG GIAN (TÓM TẮT) ===== -->
+    <section class="muc">
+      <div class="khung ban-tom-tat">
+        <figure class="anh-chu-thich ban-tom-tat__anh-lon">
+          <img src="../IMG/goc-cay-xanh.jpg" alt="Gian trong của quán với bàn ghế mây, chậu cây lớn và quầy pha phía sau" width="1000" height="750" loading="lazy">
+          <figcaption>Tầng trệt: quầy pha phía sau, bàn ghế mây phía trước.</figcaption>
+        </figure>
+        <figure class="anh-chu-thich ban-tom-tat__anh-nho">
+          <img src="../IMG/ly-cortado.jpg" alt="Một ly cortado trong cốc thủy tinh dưới nắng chiều, bóng lá in trên mặt bàn" width="1000" height="1000" loading="lazy">
+          <figcaption>Cortado lô #039, 3 giờ chiều.</figcaption>
+        </figure>
+        <div class="ban-tom-tat__chu">
+          <h2>Ba khu, 48 chỗ ngồi.</h2>
+          <p>Ghế quầy để xem rang, tầng hai yên tĩnh để làm việc, và mảnh sân sau có cây cho buổi chiều.</p>
+          <a class="nut nut--vien" href="khong-gian.html">Xem không gian</a>
+        </div>
+      </div>
+    </section>
+
+  </main>
+
+  <!-- ===== CHÂN TRANG ===== -->
+  <footer class="chan-trang">
+    <div class="khung">
+      <div class="chan-trang__hang">
+        <div>
+          <a class="logo" href="index.html">
+            <span class="logo__chu">Thềm</span>
+            <span class="logo__phu">café · xưởng rang</span>
+          </a>
+        </div>
+        <div>
+          <h2>Ghé quán</h2>
+          <address>
+            27 Hẻm 112 Trần Quốc Thảo<br>
+            Phường Võ Thị Sáu, Quận 3, TP.HCM
+          </address>
+          <p class="viet-tay">7:00 – 22:00 mỗi ngày</p>
+        </div>
+        <div>
+          <h2>Các trang</h2>
+          <ul>
+            <li><a href="khong-gian.html">Không gian</a></li>
+            <li><a href="menu.html">Menu</a></li>
+            <li><a href="dat-ban.html">Đặt bàn</a></li>
+            <li><a href="gioi-thieu.html">Giới thiệu</a></li>
+          </ul>
+        </div>
+      </div>
+      <p class="chan-trang__ghi-chu">Thềm Café là quán hư cấu: địa chỉ, menu, giá và số liệu rang chỉ mang tính minh họa. Bài tập cuối môn Thiết kế Website · Lê Thị Bảo Trân · 2026. Ảnh từ Unsplash, xem <a href="gioi-thieu.html#nguon">nguồn ảnh</a>.</p>
+    </div>
+  </footer>
+
+</body>
+</html>

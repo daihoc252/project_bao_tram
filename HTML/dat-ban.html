@@ -1,0 +1,187 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Đặt bàn · Thềm Café</title>
+  <meta name="description" content="Đặt bàn tại Thềm Café, xem địa chỉ, giờ mở cửa và đường đi.">
+  <link rel="stylesheet" href="../css/fonts.css">
+  <link rel="stylesheet" href="../css/style.css">
+</head>
+<body>
+
+  <!-- ===== ĐẦU TRANG ===== -->
+  <header class="dau-trang">
+    <div class="khung dau-trang__hang">
+      <a class="logo" href="index.html">
+        <span class="logo__chu">Thềm</span>
+        <span class="logo__phu">café · xưởng rang</span>
+      </a>
+      <nav class="dieu-huong" aria-label="Điều hướng chính">
+        <ol>
+          <li class="giai-doan--1"><a href="index.html"><span class="giai-doan__ten">nạp hạt</span><span class="giai-doan__trang">Trang chủ</span></a></li>
+          <li class="giai-doan--2"><a href="khong-gian.html"><span class="giai-doan__ten">sấy</span><span class="giai-doan__trang">Không gian</span></a></li>
+          <li class="giai-doan--3"><a href="menu.html"><span class="giai-doan__ten">nổ lần 1</span><span class="giai-doan__trang">Menu</span></a></li>
+          <li class="giai-doan--4"><a href="dat-ban.html" aria-current="page"><span class="giai-doan__ten">phát triển</span><span class="giai-doan__trang">Đặt bàn</span></a></li>
+          <li class="giai-doan--5"><a href="gioi-thieu.html"><span class="giai-doan__ten">ra lò</span><span class="giai-doan__trang">Giới thiệu</span></a></li>
+        </ol>
+      </nav>
+    </div>
+  </header>
+
+  <main>
+
+    <!-- ===== TIÊU ĐỀ TRANG ===== -->
+    <section class="dau-trang-con nen-nau">
+      <div class="khung dau-trang-con__hang">
+        <div>
+          <h1>Giữ một chỗ trên thềm</h1>
+        </div>
+        <p class="dau-trang-con__mo-ta">Quán nhận khách vãng lai cả ngày. Nếu đi nhóm từ 4 người, hoặc muốn ngồi quầy vào buổi sáng ngày rang, hãy đặt trước để chúng tôi giữ chỗ.</p>
+      </div>
+          <div class="khung">
+        <div class="duong-cong-trang duong-cong-trang--phat-trien">
+          <img src="../IMG/duong-cong-phat-trien.svg" alt="">
+          <span class="duong-cong-trang__moc"></span>
+          <p class="duong-cong-trang__ghi-chu">phát triển · 11:00 · 201°C</p>
+        </div>
+      </div>
+    </section>
+
+    <section class="muc">
+      <div class="khung dat-ban">
+
+        <!-- Phiếu đặt bàn -->
+        <form class="phieu-dat-ban" action="#" method="get">
+          <h2>Phiếu đặt bàn</h2>
+          <p>Điền thông tin bên dưới. Các mục có dấu * là bắt buộc.</p>
+
+          <div class="phieu-dat-ban__luoi">
+            <div class="truong truong--rong">
+              <label for="ho-ten">Họ và tên *</label>
+              <input id="ho-ten" name="ho-ten" type="text" autocomplete="name" placeholder="Nguyễn Văn A" required>
+            </div>
+            <div class="truong">
+              <label for="so-dien-thoai">Số điện thoại *</label>
+              <input id="so-dien-thoai" name="so-dien-thoai" type="tel" autocomplete="tel" placeholder="09xx xxx xxx" pattern="[0-9 ]{10,13}" required>
+              <small>Quán gọi lại để xác nhận trong 30 phút.</small>
+            </div>
+            <div class="truong">
+              <label for="so-nguoi">Số người *</label>
+              <input id="so-nguoi" name="so-nguoi" type="number" min="1" max="12" value="2" required>
+              <small>Nhóm trên 12 người xin ghi rõ ở phần ghi chú.</small>
+            </div>
+            <div class="truong">
+              <label for="ngay">Ngày *</label>
+              <input id="ngay" name="ngay" type="date" required>
+            </div>
+            <div class="truong">
+              <label for="gio">Giờ *</label>
+              <select id="gio" name="gio" required>
+                <option value="">Chọn giờ</option>
+                <option>7:00 (ngày rang)</option>
+                <option>8:00 (ngày rang)</option>
+                <option>9:00</option>
+                <option>10:00</option>
+                <option>14:00</option>
+                <option>15:00</option>
+                <option>16:00</option>
+                <option>18:00</option>
+                <option>19:00</option>
+                <option>20:00</option>
+              </select>
+            </div>
+            <div class="truong truong--rong">
+              <label for="khu">Khu muốn ngồi</label>
+              <select id="khu" name="khu">
+                <option>Chỗ nào cũng được</option>
+                <option>Quầy pha (xem rang)</option>
+                <option>Tầng hai (yên tĩnh)</option>
+                <option>Sân sau (đi nhóm)</option>
+              </select>
+            </div>
+            <div class="truong truong--rong">
+              <label for="ghi-chu">Ghi chú</label>
+              <textarea id="ghi-chu" name="ghi-chu" placeholder="Ví dụ: sinh nhật bạn, cần ổ cắm, có em bé đi cùng…"></textarea>
+            </div>
+          </div>
+
+          <div class="phieu-dat-ban__cuoi">
+            <button class="nut" type="submit">Gửi phiếu đặt bàn</button>
+            <p>Đây là website bài tập: phiếu chưa được gửi tới đâu.</p>
+          </div>
+        </form>
+
+        <!-- Thông tin quán -->
+        <div class="thong-tin-quan">
+          <h2>Tìm đến Thềm</h2>
+          <address class="dia-chi">
+            <strong>27 Hẻm 112 Trần Quốc Thảo</strong><br>
+            Phường Võ Thị Sáu, Quận 3, TP.HCM
+          </address>
+
+          <table class="bang-gio">
+            <caption class="viet-tay">Giờ mở cửa</caption>
+            <tbody>
+              <tr>
+                <th scope="row">Thứ Hai – Chủ Nhật</th>
+                <td>7:00 – 22:00</td>
+              </tr>
+              <tr>
+                <th scope="row">Buổi rang (T3, T5, T7)</th>
+                <td>7:00 – 9:00</td>
+              </tr>
+              <tr>
+                <th scope="row">Món pha thủ công</th>
+                <td>đến 21:00</td>
+              </tr>
+            </tbody>
+          </table>
+
+          <h3>Đường đi</h3>
+          <ol class="duong-di">
+            <li>Từ Hồ Con Rùa, đi theo đường Trần Quốc Thảo khoảng 600 m.</li>
+            <li>Rẽ vào hẻm 112, quán ở số 27 bên tay trái, có cái thềm gạch đỏ.</li>
+            <li>Xe máy gửi đầu hẻm, xe đạp dắt thẳng vào trong nhà.</li>
+          </ol>
+        </div>
+
+      </div>
+    </section>
+
+  </main>
+
+  <!-- ===== CHÂN TRANG ===== -->
+  <footer class="chan-trang">
+    <div class="khung">
+      <div class="chan-trang__hang">
+        <div>
+          <a class="logo" href="index.html">
+            <span class="logo__chu">Thềm</span>
+            <span class="logo__phu">café · xưởng rang</span>
+          </a>
+        </div>
+        <div>
+          <h2>Ghé quán</h2>
+          <address>
+            27 Hẻm 112 Trần Quốc Thảo<br>
+            Phường Võ Thị Sáu, Quận 3, TP.HCM
+          </address>
+          <p class="viet-tay">7:00 – 22:00 mỗi ngày</p>
+        </div>
+        <div>
+          <h2>Các trang</h2>
+          <ul>
+            <li><a href="khong-gian.html">Không gian</a></li>
+            <li><a href="menu.html">Menu</a></li>
+            <li><a href="dat-ban.html">Đặt bàn</a></li>
+            <li><a href="gioi-thieu.html">Giới thiệu</a></li>
+          </ul>
+        </div>
+      </div>
+      <p class="chan-trang__ghi-chu">Thềm Café là quán hư cấu: địa chỉ, menu, giá và số liệu rang chỉ mang tính minh họa. Bài tập cuối môn Thiết kế Website · Lê Thị Bảo Trân · 2026. Ảnh từ Unsplash, xem <a href="gioi-thieu.html#nguon">nguồn ảnh</a>.</p>
+    </div>
+  </footer>
+
+</body>
+</html>

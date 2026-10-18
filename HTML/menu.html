@@ -1,0 +1,346 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Menu · Thềm Café</title>
+  <meta name="description" content="Menu của Thềm Café, ghi rõ lô hạt, độ rang và nốt hương của từng món.">
+  <link rel="stylesheet" href="../css/fonts.css">
+  <link rel="stylesheet" href="../css/style.css">
+</head>
+<body>
+
+  <!-- ===== ĐẦU TRANG ===== -->
+  <header class="dau-trang">
+    <div class="khung dau-trang__hang">
+      <a class="logo" href="index.html">
+        <span class="logo__chu">Thềm</span>
+        <span class="logo__phu">café · xưởng rang</span>
+      </a>
+      <nav class="dieu-huong" aria-label="Điều hướng chính">
+        <ol>
+          <li class="giai-doan--1"><a href="index.html"><span class="giai-doan__ten">nạp hạt</span><span class="giai-doan__trang">Trang chủ</span></a></li>
+          <li class="giai-doan--2"><a href="khong-gian.html"><span class="giai-doan__ten">sấy</span><span class="giai-doan__trang">Không gian</span></a></li>
+          <li class="giai-doan--3"><a href="menu.html" aria-current="page"><span class="giai-doan__ten">nổ lần 1</span><span class="giai-doan__trang">Menu</span></a></li>
+          <li class="giai-doan--4"><a href="dat-ban.html"><span class="giai-doan__ten">phát triển</span><span class="giai-doan__trang">Đặt bàn</span></a></li>
+          <li class="giai-doan--5"><a href="gioi-thieu.html"><span class="giai-doan__ten">ra lò</span><span class="giai-doan__trang">Giới thiệu</span></a></li>
+        </ol>
+      </nav>
+    </div>
+  </header>
+
+  <main>
+
+    <!-- ===== TIÊU ĐỀ TRANG ===== -->
+    <section class="dau-trang-con nen-que">
+      <div class="khung dau-trang-con__hang">
+        <div>
+          <h1>Menu theo độ rang</h1>
+        </div>
+        <div>
+          <p class="dau-trang-con__mo-ta">Mỗi món ghi rõ lô hạt đang dùng, độ rang và những nốt hương bạn sẽ nếm thấy. Chưa biết chọn gì? Thích chua thanh thì gọi món rang sáng, thích đậm đắng thì gọi món rang đậm.</p>
+          <ul class="chu-giai" aria-label="Chú giải độ rang">
+            <li><span class="do-rang do-rang--sang" aria-hidden="true"><span></span><span></span><span></span><span></span><span></span></span>Sáng</li>
+            <li><span class="do-rang do-rang--vua" aria-hidden="true"><span></span><span></span><span></span><span></span><span></span></span>Vừa</li>
+            <li><span class="do-rang do-rang--dam" aria-hidden="true"><span></span><span></span><span></span><span></span><span></span></span>Đậm</li>
+          </ul>
+        </div>
+      </div>
+          <div class="khung">
+        <div class="duong-cong-trang duong-cong-trang--no">
+          <img src="../IMG/duong-cong-no.svg" alt="">
+          <span class="duong-cong-trang__moc"></span>
+          <p class="duong-cong-trang__ghi-chu">nổ lần 1 · 9:40 · 196°C</p>
+        </div>
+      </div>
+    </section>
+
+    <section class="muc">
+      <div class="khung">
+
+        <!-- Nhóm 1 -->
+        <div class="nhom-mon">
+          <div class="nhom-mon__dau">
+            <h2>Pha thủ công</h2>
+            <p>Pha từng ly bằng tay để giữ trọn hương của lô rang sáng. Mất khoảng 5 phút, đáng để chờ.</p>
+          </div>
+          <table class="bang-nhat-ky">
+            <caption>Pha thủ công · giá cho một ly</caption>
+            <thead>
+              <tr>
+                <th scope="col">Món</th>
+                <th scope="col">Lô hạt</th>
+                <th scope="col">Độ rang</th>
+                <th scope="col">Nốt hương</th>
+                <th scope="col" class="cot-gia">Giá</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <th scope="row">Pour-over V60</th>
+                <td data-nhan="Lô hạt">#041 · Arabica Cầu Đất</td>
+                <td data-nhan="Độ rang"><span class="do-rang do-rang--sang" aria-hidden="true"><span></span><span></span><span></span><span></span><span></span></span>Sáng</td>
+                <td data-nhan="Nốt hương">đào chín, mật ong, trà đen</td>
+                <td class="cot-gia">65.000đ</td>
+              </tr>
+              <tr>
+                <th scope="row">Pour-over Kalita</th>
+                <td data-nhan="Lô hạt">#039 · Arabica Sơn La</td>
+                <td data-nhan="Độ rang"><span class="do-rang do-rang--vua" aria-hidden="true"><span></span><span></span><span></span><span></span><span></span></span>Vừa</td>
+                <td data-nhan="Nốt hương">caramel, hạnh nhân, cam</td>
+                <td class="cot-gia">60.000đ</td>
+              </tr>
+              <tr>
+                <th scope="row">Cold brew 18 giờ</th>
+                <td data-nhan="Lô hạt">#039 · Arabica Sơn La</td>
+                <td data-nhan="Độ rang"><span class="do-rang do-rang--vua" aria-hidden="true"><span></span><span></span><span></span><span></span><span></span></span>Vừa</td>
+                <td data-nhan="Nốt hương">cacao, cam ngọt, êm</td>
+                <td class="cot-gia">55.000đ</td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+
+        <!-- Nhóm 2 -->
+        <div class="nhom-mon">
+          <div class="nhom-mon__dau">
+            <h2>Pha máy espresso</h2>
+            <p>Dùng lô rang vừa, chiết 18 gram ra 36 gram trong khoảng 28 giây. Pha sữa tươi nguyên kem.</p>
+          </div>
+          <table class="bang-nhat-ky">
+            <caption>Pha máy · giá cho một ly</caption>
+            <thead>
+              <tr>
+                <th scope="col">Món</th>
+                <th scope="col">Lô hạt</th>
+                <th scope="col">Độ rang</th>
+                <th scope="col">Nốt hương</th>
+                <th scope="col" class="cot-gia">Giá</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <th scope="row">Espresso</th>
+                <td data-nhan="Lô hạt">#039 · Arabica Sơn La</td>
+                <td data-nhan="Độ rang"><span class="do-rang do-rang--vua" aria-hidden="true"><span></span><span></span><span></span><span></span><span></span></span>Vừa</td>
+                <td data-nhan="Nốt hương">caramel, hạnh nhân, hậu vị cam</td>
+                <td class="cot-gia">40.000đ</td>
+              </tr>
+              <tr>
+                <th scope="row">Americano</th>
+                <td data-nhan="Lô hạt">#039 · Arabica Sơn La</td>
+                <td data-nhan="Độ rang"><span class="do-rang do-rang--vua" aria-hidden="true"><span></span><span></span><span></span><span></span><span></span></span>Vừa</td>
+                <td data-nhan="Nốt hương">caramel, thanh nhẹ</td>
+                <td class="cot-gia">45.000đ</td>
+              </tr>
+              <tr>
+                <th scope="row">Cortado</th>
+                <td data-nhan="Lô hạt">#039 · Arabica Sơn La</td>
+                <td data-nhan="Độ rang"><span class="do-rang do-rang--vua" aria-hidden="true"><span></span><span></span><span></span><span></span><span></span></span>Vừa</td>
+                <td data-nhan="Nốt hương">bánh quy bơ, ngọt sữa</td>
+                <td class="cot-gia">50.000đ</td>
+              </tr>
+              <tr>
+                <th scope="row">Latte</th>
+                <td data-nhan="Lô hạt">#039 · Arabica Sơn La</td>
+                <td data-nhan="Độ rang"><span class="do-rang do-rang--vua" aria-hidden="true"><span></span><span></span><span></span><span></span><span></span></span>Vừa</td>
+                <td data-nhan="Nốt hương">caramel sữa, mềm</td>
+                <td class="cot-gia">55.000đ</td>
+              </tr>
+              <tr>
+                <th scope="row">Cappuccino</th>
+                <td data-nhan="Lô hạt">#039 · Arabica Sơn La</td>
+                <td data-nhan="Độ rang"><span class="do-rang do-rang--vua" aria-hidden="true"><span></span><span></span><span></span><span></span><span></span></span>Vừa</td>
+                <td data-nhan="Nốt hương">cacao, bọt sữa dày</td>
+                <td class="cot-gia">55.000đ</td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+
+        <!-- Dải ảnh -->
+        <div class="dai-anh">
+          <figure class="anh-chu-thich">
+            <img src="../IMG/espresso.jpg" alt="Nhìn từ trên xuống một tách cà phê đen có lớp bọt crema nâu vàng" width="800" height="800" loading="lazy">
+            <figcaption>Espresso #039</figcaption>
+          </figure>
+          <figure class="anh-chu-thich">
+            <img src="../IMG/sua-da.jpg" alt="Ly cà phê sữa đá với các lớp sữa và cà phê đang hòa vào nhau trên bàn gỗ" width="800" height="800" loading="lazy">
+            <figcaption>Bạc xỉu #037</figcaption>
+          </figure>
+          <figure class="anh-chu-thich">
+            <img src="../IMG/latte.jpg" alt="Tách latte có hình chiếc lá vẽ bằng bọt sữa, đặt trên đĩa trắng" width="800" height="800" loading="lazy">
+            <figcaption>Latte #039</figcaption>
+          </figure>
+          <figure class="anh-chu-thich">
+            <img src="../IMG/quay-pour-over.jpg" alt="Barista rót nước từ ấm cổ ngỗng vào phễu lọc giấy trên bình thủy tinh" width="1200" height="900" loading="lazy">
+            <figcaption>Pour-over #041</figcaption>
+          </figure>
+        </div>
+
+        <!-- Nhóm 3 -->
+        <div class="nhom-mon">
+          <div class="nhom-mon__dau">
+            <h2>Cà phê Việt</h2>
+            <p>Robusta Đắk Lắk rang đậm, pha phin nhôm như ở nhà. Sữa đặc có thể đổi sang sữa tươi.</p>
+          </div>
+          <table class="bang-nhat-ky">
+            <caption>Cà phê Việt · giá cho một ly</caption>
+            <thead>
+              <tr>
+                <th scope="col">Món</th>
+                <th scope="col">Lô hạt</th>
+                <th scope="col">Độ rang</th>
+                <th scope="col">Nốt hương</th>
+                <th scope="col" class="cot-gia">Giá</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <th scope="row">Phin đen đá</th>
+                <td data-nhan="Lô hạt">#037 · Robusta Đắk Lắk</td>
+                <td data-nhan="Độ rang"><span class="do-rang do-rang--dam" aria-hidden="true"><span></span><span></span><span></span><span></span><span></span></span>Đậm</td>
+                <td data-nhan="Nốt hương">sô-cô-la đen, đắng sạch</td>
+                <td class="cot-gia">30.000đ</td>
+              </tr>
+              <tr>
+                <th scope="row">Phin sữa đá</th>
+                <td data-nhan="Lô hạt">#037 · Robusta Đắk Lắk</td>
+                <td data-nhan="Độ rang"><span class="do-rang do-rang--dam" aria-hidden="true"><span></span><span></span><span></span><span></span><span></span></span>Đậm</td>
+                <td data-nhan="Nốt hương">sô-cô-la sữa, béo</td>
+                <td class="cot-gia">35.000đ</td>
+              </tr>
+              <tr>
+                <th scope="row">Bạc xỉu</th>
+                <td data-nhan="Lô hạt">#037 · Robusta Đắk Lắk</td>
+                <td data-nhan="Độ rang"><span class="do-rang do-rang--dam" aria-hidden="true"><span></span><span></span><span></span><span></span><span></span></span>Đậm</td>
+                <td data-nhan="Nốt hương">nhiều sữa, ngọt dịu</td>
+                <td class="cot-gia">39.000đ</td>
+              </tr>
+              <tr>
+                <th scope="row">Cà phê muối</th>
+                <td data-nhan="Lô hạt">#037 · Robusta Đắk Lắk</td>
+                <td data-nhan="Độ rang"><span class="do-rang do-rang--dam" aria-hidden="true"><span></span><span></span><span></span><span></span><span></span></span>Đậm</td>
+                <td data-nhan="Nốt hương">kem muối, đường thốt nốt</td>
+                <td class="cot-gia">45.000đ</td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+
+        <!-- Nhóm 4 -->
+        <div class="nhom-mon">
+          <div class="nhom-mon__dau">
+            <h2>Không có cà phê</h2>
+            <p>Cho người đi cùng không uống cà phê, hoặc cho ly thứ hai trong ngày.</p>
+          </div>
+          <table class="bang-nhat-ky">
+            <caption>Đồ uống khác · giá cho một ly</caption>
+            <thead>
+              <tr>
+                <th scope="col">Món</th>
+                <th scope="col">Thành phần</th>
+                <th scope="col" class="cot-gia">Giá</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <th scope="row">Trà đào cam sả</th>
+                <td data-nhan="Thành phần">trà đen, đào ngâm, cam tươi, sả</td>
+                <td class="cot-gia">45.000đ</td>
+              </tr>
+              <tr>
+                <th scope="row">Cacao nóng</th>
+                <td data-nhan="Thành phần">cacao Bến Tre, sữa tươi</td>
+                <td class="cot-gia">45.000đ</td>
+              </tr>
+              <tr>
+                <th scope="row">Vỏ cà phê ngâm lạnh</th>
+                <td data-nhan="Thành phần">vỏ quả cà phê sấy (cascara), chanh vàng, mật ong</td>
+                <td class="cot-gia">40.000đ</td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+
+      </div>
+    </section>
+
+    <!-- ===== HẠT RANG MANG VỀ ===== -->
+    <section class="muc mang-ve">
+      <div class="khung mang-ve__hang">
+        <div>
+          <h2>Hạt rang trong tuần</h2>
+          <p>Túi 250 gram, ghi ngày rang trên nhãn. Nói với quầy bạn pha bằng gì, chúng tôi xay đúng cỡ.</p>
+          <img src="../IMG/bao-hat.jpg" alt="Bao bố đựng đầy hạt cà phê rang màu nâu bóng" width="1000" height="750" loading="lazy">
+        </div>
+        <table class="bang-nhat-ky">
+          <caption>Túi 250 gram</caption>
+          <thead>
+            <tr>
+              <th scope="col">Lô</th>
+              <th scope="col">Hạt</th>
+              <th scope="col">Độ rang</th>
+              <th scope="col" class="cot-gia">Giá</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <th scope="row">#041</th>
+              <td data-nhan="Hạt">Arabica Cầu Đất</td>
+              <td data-nhan="Độ rang">Sáng</td>
+              <td class="cot-gia">220.000đ</td>
+            </tr>
+            <tr>
+              <th scope="row">#039</th>
+              <td data-nhan="Hạt">Arabica Sơn La</td>
+              <td data-nhan="Độ rang">Vừa</td>
+              <td class="cot-gia">180.000đ</td>
+            </tr>
+            <tr>
+              <th scope="row">#037</th>
+              <td data-nhan="Hạt">Robusta Đắk Lắk</td>
+              <td data-nhan="Độ rang">Đậm</td>
+              <td class="cot-gia">120.000đ</td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+    </section>
+
+  </main>
+
+  <!-- ===== CHÂN TRANG ===== -->
+  <footer class="chan-trang">
+    <div class="khung">
+      <div class="chan-trang__hang">
+        <div>
+          <a class="logo" href="index.html">
+            <span class="logo__chu">Thềm</span>
+            <span class="logo__phu">café · xưởng rang</span>
+          </a>
+        </div>
+        <div>
+          <h2>Ghé quán</h2>
+          <address>
+            27 Hẻm 112 Trần Quốc Thảo<br>
+            Phường Võ Thị Sáu, Quận 3, TP.HCM
+          </address>
+          <p class="viet-tay">7:00 – 22:00 mỗi ngày</p>
+        </div>
+        <div>
+          <h2>Các trang</h2>
+          <ul>
+            <li><a href="khong-gian.html">Không gian</a></li>
+            <li><a href="menu.html">Menu</a></li>
+            <li><a href="dat-ban.html">Đặt bàn</a></li>
+            <li><a href="gioi-thieu.html">Giới thiệu</a></li>
+          </ul>
+        </div>
+      </div>
+      <p class="chan-trang__ghi-chu">Thềm Café là quán hư cấu: địa chỉ, menu, giá và số liệu rang chỉ mang tính minh họa. Bài tập cuối môn Thiết kế Website · Lê Thị Bảo Trân · 2026. Ảnh từ Unsplash, xem <a href="gioi-thieu.html#nguon">nguồn ảnh</a>.</p>
+    </div>
+  </footer>
+
+</body>
+</html>
