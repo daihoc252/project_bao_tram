@@ -1,11 +1,4 @@
-/* =========================================================
-   THỀM CAFÉ — style.css
-   Ý tưởng: mỗi trang là một tờ trong "nhật ký mẻ rang".
-   Nền giấy kẻ ô ly, đường cong rang màu cam, và các khối màu
-   đi theo độ chín của hạt: xanh → vàng → quế → nâu → đậm.
-   ========================================================= */
-
-/* ---------- 1. Biến màu, chữ, khoảng cách ---------- */
+/* Biến màu, chữ, khoảng cách */
 :root {
   /* giấy và mực */
   --giay: #eef1ea;
@@ -34,7 +27,7 @@
   --rong-toi-da: 1240px;
 }
 
-/* ---------- 2. Thiết lập chung ---------- */
+/* Thiết lập chung */
 * {
   box-sizing: border-box;
   margin: 0;
@@ -124,7 +117,7 @@ table {
   font-variant-numeric: tabular-nums;
 }
 
-/* ---------- 3. Nút ---------- */
+/* Nút */
 .nut {
   display: inline-block;
   font-family: var(--chu-tieu-de);
@@ -155,7 +148,7 @@ table {
   color: var(--giay);
 }
 
-/* ---------- 4. Đầu trang + thanh điều hướng theo đường rang ---------- */
+/* Đầu trang + thanh điều hướng theo đường rang */
 .dau-trang {
   background: var(--giay);
   border-bottom: 2px solid var(--muc);
@@ -277,7 +270,7 @@ table {
   color: var(--cam-chu);
 }
 
-/* ---------- 5. Trang chủ: phần mở đầu với đường cong rang ---------- */
+/* Trang chủ: phần mở đầu với đường cong rang */
 .mo-dau {
   padding-top: clamp(28px, 4vw, 48px);
   overflow: hidden;
@@ -408,7 +401,7 @@ table {
   to { opacity: 1; transform: none; }
 }
 
-/* ---------- 6. Trang chủ: xưởng rang ---------- */
+/* Trang chủ: xưởng rang */
 .muc {
   padding: var(--khoang-muc) 0;
 }
@@ -481,7 +474,7 @@ table {
   aspect-ratio: 4 / 3;
 }
 
-/* ---------- 7. Thước màu rang (dải màu tràn ngang) ---------- */
+/* Thước màu rang (dải màu tràn ngang) */
 .thuoc-rang {
   display: grid;
   grid-template-columns: repeat(5, 1fr);
@@ -527,7 +520,7 @@ table {
   padding-bottom: 28px;
 }
 
-/* ---------- 8. Bảng nhật ký (dùng chung cho trang chủ và menu) ---------- */
+/* Bảng nhật ký (dùng chung cho trang chủ và menu) */
 .bang-nhat-ky {
   width: 100%;
   border-collapse: collapse;
@@ -610,7 +603,7 @@ table {
   margin-bottom: 36px;
 }
 
-/* ---------- 9. Trang chủ: không gian ---------- */
+/* Trang chủ: không gian */
 .ban-tom-tat {
   display: grid;
   grid-template-columns: 2fr 1fr;
@@ -639,7 +632,7 @@ table {
   margin-bottom: 24px;
 }
 
-/* ---------- 10. Đầu trang con (các trang nội dung) ---------- */
+/* Đầu trang con (các trang nội dung) */
 .dau-trang-con {
   border-bottom: 2px solid var(--muc);
   padding: clamp(48px, 7vw, 96px) 0 clamp(40px, 5vw, 64px);
@@ -698,7 +691,7 @@ table {
   white-space: nowrap;
 }
 
-/* ---------- 11. Trang menu ---------- */
+/* Trang menu */
 .chu-giai {
   display: flex;
   flex-wrap: wrap;
@@ -769,7 +762,7 @@ table {
   margin-top: 28px;
 }
 
-/* ---------- 12. Trang không gian ---------- */
+/* Trang không gian */
 .anh-toan-canh {
   position: relative;
   border-top: 2px solid var(--muc);
@@ -835,7 +828,7 @@ table {
   align-items: center;
 }
 
-/* ---------- 13. Trang đặt bàn ---------- */
+/* Trang đặt bàn */
 .dat-ban {
   display: grid;
   grid-template-columns: 1.3fr 1fr;
@@ -970,12 +963,28 @@ table {
   margin-top: 8px;
 }
 
-/* ---------- 14. Trang giới thiệu ---------- */
+/* Trang giới thiệu */
 .trang-ky {
   display: grid;
   grid-template-columns: 1fr 1.4fr;
   gap: clamp(40px, 6vw, 88px);
   align-items: start;
+}
+
+/* ảnh chân dung dán vào sổ như ảnh thẻ: mép giấy trắng, viền mực, nghiêng nhẹ */
+.chan-dung {
+  width: min(380px, 100%);
+  margin-bottom: 32px;
+  padding: 10px;
+  background: #fbfcf9;
+  border: 2px solid var(--muc);
+  transform: rotate(-2deg);
+}
+
+.chan-dung img {
+  width: 100%;
+  aspect-ratio: 3 / 4;
+  object-fit: cover;
 }
 
 .trang-ky__ten {
@@ -1027,35 +1036,7 @@ table {
   padding-left: 18px;
 }
 
-.nguon {
-  border-top: 2px solid var(--muc);
-}
-
-.nguon__hang {
-  display: grid;
-  grid-template-columns: 1fr 1.6fr;
-  gap: 48px;
-}
-
-.nguon ul {
-  list-style: none;
-  border-top: 2px solid var(--muc);
-}
-
-.nguon li {
-  display: grid;
-  grid-template-columns: 12rem 1fr;
-  gap: 16px;
-  padding: 10px 0;
-  border-bottom: 1px solid var(--muc-nhat);
-  font-size: 0.95rem;
-}
-
-.nguon li a {
-  overflow-wrap: anywhere;
-}
-
-/* ---------- 15. Chân trang ---------- */
+/* Chân trang */
 .chan-trang {
   background: var(--rang-dam);
   color: var(--chu-tren-nen-dam);
@@ -1102,6 +1083,14 @@ table {
   color: var(--rang-dam);
 }
 
+.chan-trang__ban-quyen {
+  margin-top: 12px;
+  font-family: var(--chu-tieu-de);
+  font-weight: 700;
+  font-size: 1.15rem;
+  letter-spacing: 0.04em;
+}
+
 .chan-trang__ghi-chu {
   margin-top: 56px;
   padding-top: 20px;
@@ -1110,7 +1099,7 @@ table {
   max-width: none;
 }
 
-/* ---------- 16. Màn hình vừa (máy tính bảng) ---------- */
+/* Màn hình vừa (máy tính bảng) */
 @media (max-width: 1080px) {
   .dau-trang__hang {
     flex-direction: column;
@@ -1143,7 +1132,7 @@ table {
   .ghi-chu--say { display: none; }
 }
 
-/* ---------- 17. Điện thoại ---------- */
+/* Điện thoại */
 @media (max-width: 640px) {
   body {
     font-size: 16px;
@@ -1181,7 +1170,6 @@ table {
   .lich-rang__hang,
   .dat-ban,
   .trang-ky,
-  .nguon__hang,
   .chan-trang__hang {
     grid-template-columns: 1fr;
   }
@@ -1321,14 +1309,13 @@ table {
     grid-template-columns: 1fr;
   }
 
-  .ho-so div,
-  .nguon li {
+  .ho-so div {
     grid-template-columns: 1fr;
     gap: 2px;
   }
 }
 
-/* ---------- 18. Người dùng chọn giảm chuyển động ---------- */
+/* Người dùng chọn giảm chuyển động */
 @media (prefers-reduced-motion: reduce) {
   html {
     scroll-behavior: auto;
