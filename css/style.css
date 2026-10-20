@@ -201,7 +201,7 @@ table {
   position: absolute;
   left: 0;
   right: 0;
-  top: 30px;
+  top: 34px;
   height: 4px;
   background: var(--mau-giai-doan);
 }
@@ -224,7 +224,7 @@ table {
   content: "";
   position: absolute;
   left: 0;
-  top: 25px;
+  top: 29px;
   width: 14px;
   height: 14px;
   border-radius: 50%;
@@ -235,7 +235,7 @@ table {
 
 .giai-doan__ten {
   display: block;
-  height: 26px;
+  height: 30px;
   font-family: var(--chu-tay);
   font-size: 1rem;
   color: var(--muc-nhat);
