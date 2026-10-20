@@ -17,9 +17,9 @@
   --chu-tren-nen-dam: #f1e9dd;
 
   /* phông chữ */
-  --chu-tieu-de: 'Big Shoulders Display', 'Arial Narrow', sans-serif;
-  --chu-than: 'Be Vietnam Pro', 'Segoe UI', sans-serif;
-  --chu-tay: 'Patrick Hand', 'Comic Sans MS', cursive;
+  --chu-tieu-de: 'Big Shoulders Display', 'Segoe UI', Tahoma, sans-serif;
+  --chu-than: 'Be Vietnam Pro', 'Segoe UI', Tahoma, sans-serif;
+  --chu-tay: 'Patrick Hand', 'Segoe UI', Tahoma, sans-serif;
 
   /* khoảng cách */
   --le: clamp(16px, 4vw, 48px);
